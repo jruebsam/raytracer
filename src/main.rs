@@ -29,17 +29,4 @@ fn main() {
 
     img.save_with_format("test.png", image::ImageFormat::Png)
         .unwrap();
-
-    let a = Vec3 {
-        x: 1.,
-        y: 2.,
-        z: 3.,
-    };
-    let b = Vec3 {
-        x: 1.,
-        y: 2.,
-        z: 3.,
-    };
-    let c = &a + &b;
-    dbg!(c);
 }
