@@ -1,6 +1,6 @@
-pub mod vec3;
+mod vec3;
+mod ray;
 
-use vec3::Vec3;
 use zzz::ProgressBar;
 
 fn main() {
@@ -29,4 +29,6 @@ fn main() {
 
     img.save_with_format("test.png", image::ImageFormat::Png)
         .unwrap();
+    
+    println!("Hello");
 }
